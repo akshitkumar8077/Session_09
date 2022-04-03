@@ -45,7 +45,7 @@ const formElement = document.getElementById("booking-form"); // write code to ge
 // add event lisner to the form
 formElement.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("Form submigtted");
+  console.log("Thank You!! Your form is submitted");
 
   const data = {
     fullName: formElement.elements["fullName"].value,
@@ -57,7 +57,7 @@ formElement.addEventListener("submit", (e) => {
 
   if (isInvalidName(data.fullName)) {
     // show alert
-    window.alert("SOmething went wrong");
+    window.alert("Something went wrong");
   } else {
     makeRequest(data);
   }
